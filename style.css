@@ -1,0 +1,74 @@
+/* Clear default styling */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+    margin: 0px 1rem;
+}
+
+/* Make nav flex */
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 1rem 4rem;
+}
+nav a {
+	font-size: 1.5rem;
+	padding: 0.5rem;
+	text-underline-offset: 0.15em;
+	transition: text-underline-offset .3s;
+}
+nav a:hover {
+	text-underline-offset: 0.3em;
+}
+
+.hero {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+}
+.hero img {
+    width: 500px
+}
+.hero h1{
+    font-size: 3rem;
+    margin-bottom: .5rem; 
+}
+.hero blockquote{
+    font-size: 1.5rem;
+    width: 40rem;
+    margin-bottom: 3rem
+}
+.hero button {
+    padding: 1rem 3rem;
+    background-color: lightblue;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+/* Small screen sizes */
+@media only screen and (max-width: 600px) {
+	nav {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		align-items: start;
+	}
+	.pages {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		align-items: start;
+	}
+	nav a {
+		font-size: 1.2rem;
+		padding: 0.25rem;
+	}
+    .hero img {
+        width: 200px
+    }
+}
