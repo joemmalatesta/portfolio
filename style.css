@@ -4,8 +4,8 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-body{
-    margin: 0px 1rem;
+body {
+	margin: 0px 1rem;
 }
 
 /* Make nav flex */
@@ -21,7 +21,7 @@ nav a {
 	font-size: 1.5rem;
 	padding: 0.5rem;
 	text-underline-offset: 0.15em;
-	transition: text-underline-offset .3s;
+	transition: text-underline-offset 0.3s;
 	color: black;
 }
 nav a:hover {
@@ -29,30 +29,29 @@ nav a:hover {
 }
 
 @media only screen and (min-width: 600px) {
-.hero {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-
-}
-.hero img {
-    width: 500px
-}
-.hero h1{
-    font-size: 3rem;
-    margin-bottom: .5rem; 
-}
-.hero blockquote{
-    font-size: 1.5rem;
-    width: 40rem;
-    margin-bottom: 3rem
-}
-.hero button {
-    padding: 1rem 3rem;
-    background-color: lightblue;
-    font-size: 1.2rem;
-    border-radius: 5px;
-}
+	.hero {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.hero img {
+		width: 500px;
+	}
+	.hero h1 {
+		font-size: 3rem;
+		margin-bottom: 0.5rem;
+	}
+	.hero blockquote {
+		font-size: 1.5rem;
+		width: 40rem;
+		margin-bottom: 3rem;
+	}
+	.hero button {
+		padding: 1rem 3rem;
+		background-color: lightblue;
+		font-size: 1.2rem;
+		border-radius: 5px;
+	}
 }
 
 /* Small screen sizes */
@@ -73,7 +72,7 @@ nav a:hover {
 		font-size: 1.2rem;
 		padding: 0.25rem;
 	}
-    .hero img {
-        width: 200px
-    }
+	.hero img {
+		width: 200px;
+	}
 }
