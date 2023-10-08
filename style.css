@@ -8,8 +8,8 @@ body {
 	margin: 0px 1rem;
 }
 
-/* Make nav flex */
-nav {
+/* Make .expanded flex */
+.expanded {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -17,17 +17,25 @@ nav {
 	background-color: lightblue;
 	border-radius: 20px;
 }
-nav a {
+.expanded a {
 	font-size: 1.5rem;
 	padding: 0.5rem;
 	text-underline-offset: 0.15em;
 	transition: text-underline-offset 0.3s;
 	color: black;
 }
-nav a:hover {
+.expanded a:hover {
 	text-underline-offset: 0.3em;
 }
 
+.hamburger {
+	display: none;
+}
+.burgerActive{
+	display: none
+}
+
+/* Large screen sizes only */
 @media only screen and (min-width: 600px) {
 	.hero {
 		display: flex;
@@ -56,11 +64,50 @@ nav a:hover {
 
 /* Small screen sizes */
 @media only screen and (max-width: 600px) {
-	nav {
+	.hamburger {
+		display: flex;
+		margin: 0px 1rem;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.smallNav{
+		background-color: lightblue;
+		border-radius:20px;
 		display: flex;
 		flex-direction: column;
-		margin: 0;
+	}
+
+	/* Hide the checkbox */
+	#navBurger {
+		display: none;
+	}
+
+
+	.smallNav:has(#navBurger:checked) .burgerActive {
+		display: flex;
+		flex-direction: column;
 		align-items: start;
+		margin: 10px 15px;
+		list-style-type: none;
+		gap: 2px;
+	}
+
+
+	.burgerActive{
+		display: none
+	}
+
+
+	.burgerActive a{
+		font-size: 1.5rem;
+		color: black;
+	}
+
+
+
+	.expanded {
+		display: none;
 	}
 	.pages {
 		display: flex;
@@ -68,7 +115,7 @@ nav a:hover {
 		margin: 0;
 		align-items: start;
 	}
-	nav a {
+	.expanded a {
 		font-size: 1.2rem;
 		padding: 0.25rem;
 	}
