@@ -8,12 +8,27 @@
 		<link rel="stylesheet" href="../style.css" />
 	</head>
 	<body>
-		<nav>
+		<!-- For large screen sizes -->
+		<nav class="expanded">
 			<a href="../"><img src="../images/logo.svg" alt="logo" width="80" /></a>
 			<div class="pages">
 				<a href="../pages/resume.html">Resume</a>
 				<a href="../pages/funFacts.html">Fun Facts</a>
 			</div>
+		</nav>
+
+		<!-- For Small Screen Sizes -->
+		<nav class="smallNav">
+			<div class="hamburger">
+				<a href="../"><img src="../images/logo.svg" alt="logo" width="80" /></a>
+				<input type="checkbox" id="navBurger" />
+				<label class="burgerLabel" for="navBurger"><img src="../images/burger.svg" alt="Hamburger" /></label>
+			</div>
+
+			<ul class="burgerActive">
+				<li><a href="../pages/resume.html">Resume</a></li>
+				<li><a href="../pages/funFacts.html">Fun Facts</a></li>
+			</ul>
 		</nav>
 
 		<h1>Joe Malatesta - Resume</h1>
